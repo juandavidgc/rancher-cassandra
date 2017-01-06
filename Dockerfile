@@ -1,8 +1,8 @@
 # vim:set ft=dockerfile:
 FROM cassandra:2.2
 
-#COPY docker-entrypoint.sh /docker-entrypoint.sh
-#ENTRYPOINT ["/docker-entrypoint.sh"]
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # 7000: intra-node communication
 # 7001: TLS intra-node communication
