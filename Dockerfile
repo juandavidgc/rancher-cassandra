@@ -1,7 +1,11 @@
 # vim:set ft=dockerfile:
 FROM cassandra:2.2
 
-COPY docker-entrypoint.sh /docker-entrypoint-rancher.sh
+RUN apt-get update \
+    && apt-get install -y curl
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod a+x /docker-entrypoint.sh
 #ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # 7000: intra-node communication

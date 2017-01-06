@@ -83,4 +83,4 @@ if [ "$1" = 'cassandra' ]; then
 	done
 fi
 
-#exec "$@"
+exec "$@"
