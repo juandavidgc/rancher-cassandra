@@ -60,4 +60,4 @@ VOLUME /var/lib/cassandra
 # 9160: thrift service
 EXPOSE 7000 7001 7199 9042 9160
 # CMD ["cassandra", "-f"]
-CMD["/bin/bash"]
+CMD ["/bin/bash"]
